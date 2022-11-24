@@ -1,22 +1,22 @@
-import { Queue } from "./type/queue/Queue";
-import { Stack } from "./type/stack/Stack";
-import { SinglyList } from "./type/list/SinglyList";
-import { DoublyList } from "./type/list/DoublyList";
-import { BST } from "./type/tree/BST";
-import { CircularQueue } from "./type/queue/CircularQueue";
-import { MinHeap } from "./type/heap/Heap";
-import { DeQueue } from "./type/queue/DeQueue";
-import { BinomialHeap } from "./type/heap/BinomialHeap";
-import { AVL } from "./type/tree/AVL";
+import { Queue } from "./data-structures/queue/Queue";
+import { Stack } from "./data-structures/stack/Stack";
+import { SinglyList } from "./data-structures/list/SinglyList";
+import { DoublyList } from "./data-structures/list/DoublyList";
+import { BST } from "./data-structures/tree/BST";
+import { CircularQueue } from "./data-structures/queue/CircularQueue";
+import { MinHeap } from "./data-structures/heap/Heap";
+import { DeQueue } from "./data-structures/queue/DeQueue";
+import { BinomialHeap } from "./data-structures/heap/BinomialHeap";
+import { AVL } from "./data-structures/tree/AVL";
 import {
   UndirectedGraphList,
   UndirectedGraphMatrix,
-} from "./type/graph/UndirectedGraph";
-import { DFS, BFS } from "./type/graph/Traversal";
+} from "./data-structures/graph/UndirectedGraph";
+import { DFS, BFS } from "./data-structures/graph/Traversal";
 import {
   DirectedGraphList,
   DirectedGraphMatrix,
-} from "./type/graph/DirectedGraph";
+} from "./data-structures/graph/DirectedGraph";
 
 // const newQueue = new Queue()
 // newQueue.enqueue(1)
