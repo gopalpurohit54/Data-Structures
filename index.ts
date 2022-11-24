@@ -17,6 +17,8 @@ import {
   DirectedGraphList,
   DirectedGraphMatrix,
 } from "./data-structures/graph/DirectedGraph";
+import { binarySearch } from "./algorithms/searching/BinarySearch";
+import { linearSearch } from "./algorithms/searching/LinearSearch";
 
 // const newQueue = new Queue()
 // newQueue.enqueue(1)
@@ -163,11 +165,17 @@ import {
 // console.log(graph);
 // console.log(DFS(graph, "0"));
 
-const graph = new DirectedGraphMatrix(5);
-graph.connect(0, 1);
-graph.connect(0, 2);
-graph.connect(0, 3);
-graph.connect(1, 2);
-graph.connect(2, 4);
-console.log(graph);
-console.log(DFS(graph, 0));
+// const graph = new DirectedGraphMatrix(5);
+// graph.connect(0, 1);
+// graph.connect(0, 2);
+// graph.connect(0, 3);
+// graph.connect(1, 2);
+// graph.connect(2, 4);
+// console.log(graph);
+// console.log(DFS(graph, 0));
+
+// Searching
+// const arr1 = [1, 2, 3, 4, 99, 12, 0];
+// console.log(linearSearch(arr1, 1287));
+// const arr2 = [3, 4, 5, 6, 7, 8, 9];
+// console.log(binarySearch(arr2, 9));
