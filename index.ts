@@ -19,6 +19,15 @@ import {
 } from "./data-structures/graph/DirectedGraph";
 import { binarySearch } from "./algorithms/searching/BinarySearch";
 import { linearSearch } from "./algorithms/searching/LinearSearch";
+import { bubbleSort } from "./algorithms/sorting/BubbleSort";
+import { selectionSort } from "./algorithms/sorting/SelectionSort";
+import { insertionSort } from "./algorithms/sorting/InsertionSort";
+import { mergeSort } from "./algorithms/sorting/MergeSort";
+import { quickSort } from "./algorithms/sorting/QuickSort";
+import { countingSort } from "./algorithms/sorting/CountingSort";
+import { radixSort } from "./algorithms/sorting/RadixSort";
+import { bucketSort } from "./algorithms/sorting/BucketSort";
+import { heapSort } from "./algorithms/sorting/HeapSort";
 
 // const newQueue = new Queue()
 // newQueue.enqueue(1)
@@ -179,3 +188,18 @@ import { linearSearch } from "./algorithms/searching/LinearSearch";
 // console.log(linearSearch(arr1, 1287));
 // const arr2 = [3, 4, 5, 6, 7, 8, 9];
 // console.log(binarySearch(arr2, 9));
+
+//Sorting
+// const arrToSort = [16, 6, 5, 12, 10, 9, 1];
+// const arrToSort = [-2, 45, 0, 11, -9, 99, 28];
+// console.log(bubbleSort(arrToSort))
+// console.log(selectionSort(arrToSort))
+// console.log(insertionSort(arrToSort))
+// console.log(mergeSort(arrToSort, 0, arrToSort.length - 1))
+// console.log(quickSort(arrToSort, 0, arrToSort.length - 1))
+// console.log(countingSort(arrToSort))
+// console.log(radixSort(arrToSort))
+// const floatingArray = [0.78, 0.17, 0.3, 0.26, 0.72, 0.94, 0.21, 0.12, 0.23, 0.68]
+// const floatingArray = [11, 9, 21, 8, 17, 19, 13, 1, 24, 12]
+// console.log(bucketSort(floatingArray, 5))
+// console.log(heapSort(arrToSort))
