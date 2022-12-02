@@ -28,6 +28,15 @@ import { countingSort } from "./algorithms/sorting/CountingSort";
 import { radixSort } from "./algorithms/sorting/RadixSort";
 import { bucketSort } from "./algorithms/sorting/BucketSort";
 import { heapSort } from "./algorithms/sorting/HeapSort";
+import { placeQueen } from "./algorithms/backtracking/QueenProblem";
+import { knightTour } from "./algorithms/backtracking/KinghtTour";
+import { ratMaze } from "./algorithms/backtracking/RatMaze";
+import { subsetSum } from "./algorithms/backtracking/SubsetSum";
+import { arraySubset } from "./algorithms/backtracking/SubsetArray";
+import { graphColoring } from "./algorithms/backtracking/GraphColouring";
+import { activitySelection } from "./algorithms/greedy/ActivitySelection";
+import { jobSequencing } from "./algorithms/greedy/JobSequencing";
+import { policeThief } from "./algorithms/greedy/PoliceThief";
 
 // const newQueue = new Queue()
 // newQueue.enqueue(1)
@@ -203,3 +212,50 @@ import { heapSort } from "./algorithms/sorting/HeapSort";
 // const floatingArray = [11, 9, 21, 8, 17, 19, 13, 1, 24, 12]
 // console.log(bucketSort(floatingArray, 5))
 // console.log(heapSort(arrToSort))
+
+// Backtracking
+// const chessBoard = [
+//   [0, 0, 0, 0, 0],
+//   [0, 0, 0, 0, 0],
+//   [0, 0, 0, 0, 0],
+//   [0, 0, 0, 0, 0],
+//   [0, 0, 0, 0, 0],
+// ];
+// console.log(placeQueen(chessBoard, 0), chessBoard)
+// console.log(knightTour(8))
+// const maze: Array<Array<0|1>> = [
+//   [1, 0, 0, 0],
+//   [1, 1, 0, 1],
+//   [0, 1, 0, 0],
+//   [1, 1, 1, 1],
+// ];
+// console.log(ratMaze(maze, 0, 0))
+// const weights = [15, 22, 14, 26, 32, 9, 16, 8]
+// const target = 53
+// console.log(arraySubset(weights).length)
+// console.log(subsetSum(weights, target))
+// const graph = [
+//   [0, 1, 1, 1],
+//   [1, 0, 1, 0],
+//   [1, 1, 0, 1],
+//   [1, 0, 1, 0],
+// ];
+// console.log(graphColoring(graph, 3, 0));
+// let jobs = [
+//   ["a", 2, 100],
+//   ["b", 1, 19],
+//   ["c", 2, 27],
+//   ["d", 1, 25],
+//   ["e", 3, 15],
+// ];
+// console.log(jobSequencing(jobs, 3))
+let arr1: Array<"P" | "T"> = ["P", "T", "T", "P", "T"];
+let k = 2;
+console.log(policeThief(arr1, k));
+let arr2: Array<"P" | "T"> = ["T", "T", "P", "P", "T", "P"];
+k = 2;
+console.log(policeThief(arr2, k));
+
+let arr3: Array<"P" | "T"> = ["P", "T", "P", "T", "T", "P"];
+k = 3;
+console.log(policeThief(arr3, k));
